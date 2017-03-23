@@ -75,6 +75,7 @@ class VideoPlayer(QWidget):
             self.mediaPlayer.pause()
         else:
             self.mediaPlayer.play()
+            self.mediaPlayer.setVolume(5)
 
     def mediaStateChanged(self, state):
         if self.mediaPlayer.state() == QMediaPlayer.PlayingState:

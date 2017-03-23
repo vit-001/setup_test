@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from PyQt5.QtWidgets import QApplication
-
-from view.video_player import VideoPlayer
 
 if __name__ == '__main__':
+    import xutil.install
+
+    from PyQt5.QtWidgets import QApplication
+    from view.video_player import VideoPlayer
+
     import sys
 
     app = QApplication(sys.argv)

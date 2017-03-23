@@ -3,11 +3,12 @@ from distutils.core import setup
 setup(
     name='setup_test',
     version='1.0',
-    packages=['setup_test', 'setup_test.view'],
+    scripts=['setup_test.py'],
+    packages=['view'],
     url='none',
-    license='gpl',
-    author='Nikitin',
+    license='cc',
+    author='Vit',
     author_email='none',
     description='setup test',
-    include_package_data=True
+    requires=['PyQt5']
 )
